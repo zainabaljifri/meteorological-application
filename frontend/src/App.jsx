@@ -55,7 +55,7 @@ class WeatherApp extends Component {
     refreshCoordinates = async () => {
         this.setState({ fetchData: [] },
             await axios
-                .get("http://localhost:8000/api/coordinates/")
+                .get(`${process.env.REACT_APP_URL}api/coordinates/`)
                 .then((res) => {
                     this.setState({ DB_coordinates: res.data })
                     res.data.map((coordinates) => {
@@ -81,7 +81,7 @@ class WeatherApp extends Component {
         const Newcoordinates = { user_id: 555, timestamp: "12:00", lat: parseFloat(coordinates.user_lat), lon: parseFloat(coordinates.user_lon) };
         if (coordinates.id) {
             axios
-                .put(`http://localhost:8000/api/coordinates/${coordinates.id}/`, Newcoordinates)
+                .put(`${process.env.REACT_APP_URL}api/coordinates/${coordinates.id}/`, Newcoordinates)
                 .then((res) => this.refreshCoordinates())
                 .catch((err) => console.log(err));
             return;
@@ -90,7 +90,7 @@ class WeatherApp extends Component {
 
     handleDelete = (coordinates) => {
         axios
-            .delete(`http://localhost:8000/api/coordinates/${coordinates.id}/`)
+            .delete(`${process.env.REACT_APP_URL}api/coordinates/${coordinates.id}/`)
             .then((res) => this.refreshCoordinates())
             .catch((err) => console.log(err));
     };
@@ -98,7 +98,7 @@ class WeatherApp extends Component {
     createCoordinates = (user_lat, user_lon) => {
         const coordinates = { user_id: 555, timestamp: "13:00", lat: user_lat, lon: user_lon };
         axios
-            .post("http://localhost:8000/api/coordinates/", coordinates)
+            .post(`${process.env.REACT_APP_URL}api/coordinates/`, coordinates)
             .then((res) => this.refreshCoordinates())
             .catch((err) => console.log(err));
     };

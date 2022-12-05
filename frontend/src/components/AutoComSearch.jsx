@@ -5,7 +5,7 @@ function Search(props) {
   const [cities, setCities] = useState([]);
   const [query, setQuery] = useState("");
   useEffect(() => {
-    fetch('http://localhost:8000/api/cities/' )
+    fetch(`${process.env.REACT_APP_URL}api/cities/`)
       .then((response) =>(response.json()))
       .then((data) => {setCities(data)
         console.log(cities);})

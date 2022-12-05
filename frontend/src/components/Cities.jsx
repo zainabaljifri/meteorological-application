@@ -30,7 +30,7 @@ export default function Cities() {
     }
     );
     // axios
-    // .post("http://localhost:8000/api/cities/", all_cities)
+    // .post(`${process.env.REACT_APP_URL}api/cities/`, all_cities)
     // .then((res) => console.log(res))
     // .catch((err) => console.log(err));
 
