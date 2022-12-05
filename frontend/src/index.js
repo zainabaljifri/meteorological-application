@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 import Cities from './components/Cities';
 import reportWebVitals from './reportWebVitals';
-import App from './components/App';
+import App from './App';
 import Header from './components/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

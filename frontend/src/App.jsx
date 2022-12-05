@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Modal from "./EditModal";
-import WeatherModal from "./WeatherModal"
+import Modal from "./components/EditModal";
+import WeatherModal from "./components/WeatherModal"
 import axios from "axios";
-import UnstyledTable from "./Table";
+import UnstyledTable from "./components/Table";
 import uuid from 'react-uuid';
-import Search from "./AutoComSearch";
+import Search from "./components/AutoComSearch";
 
 class WeatherApp extends Component {
     constructor(props) {
