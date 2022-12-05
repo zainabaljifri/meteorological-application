@@ -1,0 +1,50 @@
+* {
+  font-size: 12px;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin:  0 auto;
+  padding: 30px 10px;
+  /* width: 100%; */
+}
+
+.input-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  line-height: 2.8rem;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  width: 600px;
+}
+
+
+.button {
+  background-color: #20b2abc7;
+  border: none;
+  padding: 0.01rem 1rem;
+  color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: lightseagreen;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .input-group{
+      width: 80%;
+  }
+}
