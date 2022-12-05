@@ -43,3 +43,13 @@ open a new terminal window and navigate to the 'frontend' directory and run the 
 
 
 `npm start`
+
+
+## Screenshots
+<img width="944" alt="1" src="https://user-images.githubusercontent.com/80160006/205720742-16d72ed6-bd93-484d-8be6-70e3ddb56d83.png">
+
+<img width="944" alt="2" src="https://user-images.githubusercontent.com/80160006/205720928-7a224ab1-12ae-47a1-ba7d-0819e6236b4c.png">
+
+![chart](https://user-images.githubusercontent.com/80160006/205721163-e964967e-9227-47f7-83bf-d20344969fee.png)
+
+
