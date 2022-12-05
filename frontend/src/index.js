@@ -4,16 +4,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 import Cities from './components/Cities';
 import reportWebVitals from './reportWebVitals';
-import Test from './components/App';
-import Index from './components/Card';
+import App from './components/App';
+import Header from './components/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-      <Index/>
+      <Header/>
     <div className="App">
         <div>
-            <Test/>          
+            <App/>          
         </div>
     </div>
    
