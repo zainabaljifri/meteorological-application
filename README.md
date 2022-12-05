@@ -14,7 +14,7 @@ Database structure:
 1- Users Schema, which includes  ('id','name') to store app users. In the meantime, the user id is 3
 
 
-2- Cities Schema, which includes ('id', 'region_id', 'name_ar','name_en','center_lat','center_lon') to store Saudi Arabia's cities' info
+2- Cities Schema, which includes ('id', 'region_id', 'name_ar','name_en','center_lat','center_lon') to store Saudi Arabia's cities' info retrieved from https://github.com/homaily/Saudi-Arabia-Regions-Cities-and-Districts
 
 
 3- Coordinates Schema, which includes ('id','user_id','timestamp','lat','lon') that connects every user with their coordinates
