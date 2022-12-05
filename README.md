@@ -46,7 +46,7 @@ open a new terminal window and navigate to the 'frontend' directory and run the 
 
 
 ## Screenshots
-<img width="944" alt="1" src="https://user-images.githubusercontent.com/80160006/205720742-16d72ed6-bd93-484d-8be6-70e3ddb56d83.png">
+<img width="939" alt="1" src="https://user-images.githubusercontent.com/80160006/205721668-35d2baeb-6cc2-4700-b7b6-54e6a796776e.png">
 
 <img width="944" alt="2" src="https://user-images.githubusercontent.com/80160006/205720928-7a224ab1-12ae-47a1-ba7d-0819e6236b4c.png">
 
