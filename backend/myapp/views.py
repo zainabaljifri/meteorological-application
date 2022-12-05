@@ -1,14 +1,10 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import DBSerializer, CitiesSerializer, UserSerializer, CoordinatesSerializer
-from .models import DB, Cities, User, Coordinates
+from .serializers import  CitiesSerializer, UserSerializer, CoordinatesSerializer
+from .models import Cities, User, Coordinates
 from rest_framework.response import Response
 
 # Create your views here.
-
-class DBView(viewsets.ModelViewSet):
-    serializer_class = DBSerializer
-    queryset = DB.objects.all()
 
 
 class CitiesView(viewsets.ModelViewSet):

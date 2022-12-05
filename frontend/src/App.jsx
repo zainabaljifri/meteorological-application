@@ -78,7 +78,7 @@ class WeatherApp extends Component {
 
     handleEditSubmit = (coordinates) => {
         this.toggle();
-        const Newcoordinates = { user_id: 555, timestamp: "12:00", lat: parseFloat(coordinates.user_lat), lon: parseFloat(coordinates.user_lon) };
+        const Newcoordinates = { user_id: 3, timestamp: new Date().getTime(), lat: parseFloat(coordinates.user_lat), lon: parseFloat(coordinates.user_lon) };
         if (coordinates.id) {
             axios
                 .put(`${process.env.REACT_APP_URL}api/coordinates/${coordinates.id}/`, Newcoordinates)
@@ -96,7 +96,7 @@ class WeatherApp extends Component {
     };
 
     createCoordinates = (user_lat, user_lon) => {
-        const coordinates = { user_id: 555, timestamp: "13:00", lat: user_lat, lon: user_lon };
+        const coordinates = { user_id: 3, timestamp:new Date().getTime(), lat: user_lat, lon: user_lon };
         axios
             .post(`${process.env.REACT_APP_URL}api/coordinates/`, coordinates)
             .then((res) => this.refreshCoordinates())

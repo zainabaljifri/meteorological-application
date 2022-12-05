@@ -1,11 +1,5 @@
 from rest_framework import serializers
-from .models import DB, Cities, User, Coordinates
-
-class DBSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = DB
-        fields = ('id', 'title', 'description', 'completed')
-
+from .models import Cities, User, Coordinates
 
 class CitiesSerializer(serializers.ModelSerializer):
     class Meta:
