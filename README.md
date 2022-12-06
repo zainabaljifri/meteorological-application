@@ -33,6 +33,12 @@ activate a new virtual environment:
 `pipenv shell`
 
 
+install Django using Pipenv:
+
+
+`pipenv install django`
+
+
 cd to the 'backend' directory and start up the server:
 
 
