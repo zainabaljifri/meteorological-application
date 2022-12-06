@@ -48,6 +48,12 @@ cd to the 'backend' directory and start up the server:
 open a new terminal window and navigate to the 'frontend' directory and run the following command
 
 
+`npm install`
+
+
+then, start the application:
+
+
 `npm start`
 
 
